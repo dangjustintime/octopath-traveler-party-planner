@@ -16,7 +16,49 @@ const Ophilia = {
     accuracy: 80,
     speed: 64,
     critical: 56,
-    evasion: 64
+    evasion: 64,
+    cleric_skills: [
+        {
+            name: "Heal Wounds",
+            description: "Restores HP to all allies",
+            cost: 8
+        },
+        {
+            name: "Holy Light",
+            description: "Inflict light-based damage on a single foe",
+            cost: 6
+        },
+        {
+            name: "Sheltering Veil",
+            description: "Augment one ally's elemental defense for 2 turns",
+            cost: 6
+        },
+        {
+            name: "Luminescence",
+            description: "Deal light-based damage to all foes",
+            cost: 9
+        },
+        {
+            name: "Heal More",
+            description: "Restore a large amount of HP to all allies",
+            cost: 25
+        },
+        {
+            name: "Reflective Veil",
+            description: "Grant a single ally the ability to reflect one elemental attack",
+            cost: 22
+        },
+        {
+            name: "Revive",
+            description: "Revive all incapacitated allies",
+            cost: 50
+        },
+        {
+            name: "Aelfirc\'s Auspices",
+            description: "For 3 turns, skills performed by a single choosen ally will trigger twice (This will not affect other divine skills)",
+            cost: 30
+        }
+    ]
 }
 
 // Cyrus
