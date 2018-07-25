@@ -56,7 +56,7 @@ const Tressa = {
 // Olberic
 const Olberic = {
     name: "Olberic",
-    class: "warrior",
+    class: "Warrior",
     level: 1,
     max_hp: 325,
     max_sp: 40,
@@ -71,9 +71,69 @@ const Olberic = {
 }
 
 // Primrose
+const Primrose = {
+    name: "Primrose",
+    class: "dancer",
+    level: 1,
+    max_hp: 225,
+    max_sp: 50,
+    phys_atk: 80,
+    elem_atk: 96,
+    phys_def: 56,
+    elem_def: 64,
+    accuracy: 80,
+    speed: 104,
+    critical: 80,
+    evasion: 88
+}
 
 // Alfyn
+const Alfyn = {
+    name: "Alfyn",
+    class: "Apothecary",
+    level: 1,
+    max_hp: 300,
+    max_sp: 50,
+    phys_atk: 88,
+    elem_atk: 80,
+    phys_def: 80,
+    elem_def: 80,
+    accuracy: 80,
+    speed: 64,
+    critical: 80,
+    evasion: 72
+}
 
 // Therion
+const Therion = {
+    name: "Therion",
+    class: "Thief",
+    level: 1,
+    max_hp: 250,
+    max_sp: 40,
+    phys_atk: 88,
+    elem_atk: 80,
+    phys_def: 64,
+    elem_def: 64,
+    accuracy: 88,
+    speed: 96,
+    critical: 80,
+    evasion: 96
+}
 
 // H'aanit
+const H_aanit = {
+    name: "H\'aanit",
+    class: "Hunter",
+    level: 1,
+    max_hp: 250,
+    max_sp: 40,
+    phys_atk: 96,
+    elem_atk: 80,
+    phys_def: 64,
+    elem_def: 64,
+    accuracy: 96,
+    speed: 80,
+    critical: 88,
+    evasion: 88
+}
