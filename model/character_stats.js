@@ -58,6 +58,28 @@ const Ophilia = {
             description: "For 3 turns, skills performed by a single choosen ally will trigger twice (This will not affect other divine skills)",
             cost: 30
         }
+    ],
+    support_skills: [
+        {
+            name: "Persistence",
+            description: "All status enhancements you receive will last one additional turn",
+            skill_requirement: "Unlock 4 skills"
+        },
+        {
+            name: "Inner Strength",
+            description: "Increase the maximum SP of the equipped character by 50",
+            skill_requirement: "Unlock 5 skills"
+        },
+        {
+            name: "Evil Ward",
+            description: "Increases the party\'s success rate when attempting to flee (Equipping this skill with multiple characters will have no added effect)",
+            skill_requirement: "Unlock 6 skills"
+        },
+        {
+            name: "Saving Grace",
+            description: "Grants the equipping character the ability to be healed above their maximum HP",
+            skill_requirement: "Unlock 7 skills"
+        }
     ]
 }
 
@@ -75,7 +97,71 @@ const Cyrus = {
     accuracy: 80,
     speed: 72,
     critical: 64,
-    evasion: 80
+    evasion: 80,
+    scholar_skills: [
+        {
+            name: "Fireball",
+            description: "Deal fire damage to all foes."
+            cost: 8
+        },
+        {
+            name: "Icewind",
+            description: "Deal ice damage to all foes."
+            cost: 8
+        },
+        {
+            name: "Lightning Bolt",
+            description: "Deal lightning damage to all foes."
+            cost: 8
+        },
+        {
+            name: "Analyze",
+            description: "Reveal the HP and one weakness of a single foe."
+            cost: 1
+        },
+        {
+            name: "Fire Storm",
+            description: "Deal fire damage to all foes twice."
+            cost: 22
+        },
+        {
+            name: "Blizzard",
+            description: "Deal ice damage to all foes twice."
+            cost: 22
+        },
+        {
+            name: "Lightning Blast",
+            description: "Deal lightning damage to all foes twice."
+            cost: 22
+        },
+        {
+            name: "Alephan\'s Enlightenment",
+            description: "For 3 turns, spells cast by a single chosen ally that usually targets all foes will instead be focused on a single foe at increased intensity."
+            cost: 30
+        }
+    ],
+    support_skills: [
+        {
+            name: "Evasive Maneuvers",
+            description: "Reduces the rate of random encounters. (Equipping this skill with multiple characters will have no added effect.)",
+            skill_requirement: "Learn 4 Scholar Skills"
+        },
+        {
+            name: "Elemental Augmentation",
+            description: "Augments the equipping character\'s elemental attack strength by 50.",
+            skill_requirement: "Learn 5 Scholar Skills"
+        },
+        {
+            name: "Percipience",
+            description: "Prevents the party from being surprised by foes. (Equipping this skill with multiple characters will have no added effect.)",
+            skill_requirement: "Learn 6 Scholar Skills"
+        },
+        {
+            name: "Vim and Vigor",
+            description: "The equipping character will regenerate HP each turn. (10% of max health)",
+            skill_requirement: "Learn 7 Scholar Skills"
+        }
+    ]
 }
 
 // Tressa
