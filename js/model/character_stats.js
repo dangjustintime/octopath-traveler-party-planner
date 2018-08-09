@@ -16,7 +16,8 @@ const Ophilia = {
     accuracy: 80,
     speed: 64,
     critical: 56,
-    evasion: 64
+    evasion: 64,
+    portrait: "https://vignette.wikia.nocookie.net/octopath-traveler/images/7/74/Ophilia_thumb.png/revision/latest?cb=20180515205811"
 }
 
 // Cyrus
@@ -33,7 +34,8 @@ const Cyrus = {
     accuracy: 80,
     speed: 72,
     critical: 64,
-    evasion: 80
+    evasion: 80,
+    portrait: "https://vignette.wikia.nocookie.net/octopath-traveler/images/c/cd/Cyrus_thumb.png/revision/latest?cb=20180515205735"
 }
 
 // Tressa
@@ -50,7 +52,8 @@ const Tressa = {
     accuracy: 80,
     speed: 72,
     critical: 72,
-    evasion: 72
+    evasion: 72,
+    portrait: "https://vignette.wikia.nocookie.net/octopath-traveler/images/6/6e/Tressa_thumb.png/revision/latest?cb=20180311215334"
 }
 
 // Olberic
@@ -67,7 +70,8 @@ const Olberic = {
     accuracy: 88,
     speed: 80,
     critical: 80,
-    evasion: 64
+    evasion: 64,
+    portrait: "https://vignette.wikia.nocookie.net/octopath-traveler/images/1/1f/Olberic_thumb.png/revision/latest?cb=20180311215118"
 }
 
 // Primrose
@@ -84,7 +88,8 @@ const Primrose = {
     accuracy: 80,
     speed: 104,
     critical: 80,
-    evasion: 88
+    evasion: 88,
+    portrait: "https://vignette.wikia.nocookie.net/octopath-traveler/images/9/90/Primrose_thumb.png/revision/latest?cb=20180311215441"
 }
 
 // Alfyn
@@ -101,7 +106,8 @@ const Alfyn = {
     accuracy: 80,
     speed: 64,
     critical: 80,
-    evasion: 72
+    evasion: 72,
+    portrait: "https://vignette.wikia.nocookie.net/octopath-traveler/images/7/73/Alfyn_thumb.png/revision/latest?cb=20180311215655"
 }
 
 // Therion
@@ -118,7 +124,8 @@ const Therion = {
     accuracy: 88,
     speed: 96,
     critical: 80,
-    evasion: 96
+    evasion: 96,
+    portrait: "https://vignette.wikia.nocookie.net/octopath-traveler/images/c/c4/Therion_thumb.png/revision/latest?cb=20180417084713"
 }
 
 // H'aanit
@@ -135,5 +142,6 @@ const H_aanit = {
     accuracy: 96,
     speed: 80,
     critical: 88,
-    evasion: 88
+    evasion: 88,
+    portrait: "https://vignette.wikia.nocookie.net/octopath-traveler/images/9/9c/Haanit_thumb.png/revision/latest?cb=20180417085348"
 }

@@ -1,0 +1,8 @@
+.characters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.characterInfo {
+    margin: 0.2em;
+}
