@@ -1,7 +1,4 @@
 class CharacterInfo extends React.Component {
-    constructor(props) {
-        super(props);
-    }
     render() {
         return (
             <div className="container col-5 characterInfo">
@@ -47,11 +44,29 @@ class CharacterInfo extends React.Component {
 }
 
 class PartyInfo extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            party: this.props.party
+        }
+    }
     render() {
         return (
             <div className="container">
                 <h2>Party</h2>
-                <button type="button" className="btn btn-danger">Reset</button>
+                <button
+                    onClick={() => this.props.resetParty()}
+                    type="button"
+                    className="btn btn-danger">
+                    Reset
+                </button>
+                {
+                this.state.party.map((character) => {
+                    return (
+                    <CharacterInfo character={character} />
+                    )
+                })
+                }
             </div>
         ); 
     }
@@ -69,7 +84,8 @@ class App extends React.Component {
     }
     resetParty() {
         console.log("reset party");
-        this.setState({ party: null });
+        this.setState({ party: [] });
+        console.log(this.state.party);
     }
     addToParty(character) {
         const new_party = this.state.party;
@@ -83,7 +99,10 @@ class App extends React.Component {
         return (
             <div>
                 <h1>Octopath Traveler Party Planner</h1>
-                <PartyInfo></PartyInfo>
+                <PartyInfo
+                    resetParty={this.resetParty}
+                    party={this.state.party}>
+                 </PartyInfo>
                 <div className="container row characters">
                     <CharacterInfo
                         addToParty={this.addToParty}
