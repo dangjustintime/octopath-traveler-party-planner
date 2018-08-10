@@ -1,4 +1,7 @@
 class CharacterInfo extends React.Component {
+    constructor(props) {
+        super(props);
+    }
     render() {
         return (
             <div className="container col-5 characterInfo">
@@ -33,6 +36,7 @@ class CharacterInfo extends React.Component {
                     </div>
                 </div>
                 <button
+                    onClick={() => this.props.addToParty(this.props.character)}
                     type="button"
                     className="btn btn-warning">
                     Add to Party
@@ -57,13 +61,23 @@ class App extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            party: null
+            character: null,
+            party: []
         };
         this.resetParty = this.resetParty.bind(this);
+        this.addToParty = this.addToParty.bind(this);
     }
     resetParty() {
         console.log("reset party");
         this.setState({ party: null });
+    }
+    addToParty(character) {
+        const new_party = this.state.party;
+        new_party.push(character);
+        this.setState({
+            party: new_party
+        });
+        console.log(this.state.party);
     }
     render() {
         return (
@@ -71,14 +85,38 @@ class App extends React.Component {
                 <h1>Octopath Traveler Party Planner</h1>
                 <PartyInfo></PartyInfo>
                 <div className="container row characters">
-                    <CharacterInfo character={Ophilia}></CharacterInfo>
-                    <CharacterInfo character={Cyrus}></CharacterInfo>
-                    <CharacterInfo character={Tressa}></CharacterInfo>
-                    <CharacterInfo character={Olberic}></CharacterInfo>
-                    <CharacterInfo character={Primrose}></CharacterInfo>
-                    <CharacterInfo character={Alfyn}></CharacterInfo>
-                    <CharacterInfo character={Therion}></CharacterInfo>
-                    <CharacterInfo character={H_aanit}></CharacterInfo>
+                    <CharacterInfo
+                        addToParty={this.addToParty}
+                        character={Ophilia}>
+                    </CharacterInfo>
+                    <CharacterInfo
+                        addToParty={this.addToParty}
+                        character={Cyrus}>
+                    </CharacterInfo>
+                    <CharacterInfo
+                        addToParty={this.addToParty}
+                        character={Tressa}>
+                    </CharacterInfo>
+                    <CharacterInfo
+                        addToParty={this.addToParty}
+                        character={Olberic}>
+                    </CharacterInfo>
+                    <CharacterInfo
+                        addToParty={this.addToParty}
+                        character={Primrose}>
+                    </CharacterInfo>
+                    <CharacterInfo
+                        addToParty={this.addToParty}
+                        character={Alfyn}>
+                    </CharacterInfo>
+                    <CharacterInfo
+                        addToParty={this.addToParty}
+                        character={Therion}>
+                    </CharacterInfo>
+                    <CharacterInfo
+                        addToParty={this.addToParty}
+                        character={H_aanit}>
+                    </CharacterInfo>
                 </div>
             </div>
         );

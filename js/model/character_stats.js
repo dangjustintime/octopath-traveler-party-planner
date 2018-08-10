@@ -6,7 +6,6 @@
 const Ophilia = {
     name: "Ophilia",
     primary_job: "Cleric",
-    level: 1,
     max_hp: 225,
     max_sp: 65,
     phys_atk: 80,
@@ -24,7 +23,6 @@ const Ophilia = {
 const Cyrus = {
     name: "Cyrus",
     primary_job: "Scholar",
-    level: 1,
     max_hp: 200,
     max_sp: 60,
     phys_atk: 72,
@@ -42,7 +40,6 @@ const Cyrus = {
 const Tressa = {
     name: "Tressa",
     primary_job: "Merchant",
-    level: 1,
     max_hp: 275,
     max_sp: 50,
     phys_atk: 88,
@@ -60,7 +57,6 @@ const Tressa = {
 const Olberic = {
     name: "Olberic",
     primary_job: "Warrior",
-    level: 1,
     max_hp: 325,
     max_sp: 40,
     phys_atk: 96,
@@ -78,7 +74,6 @@ const Olberic = {
 const Primrose = {
     name: "Primrose",
     primary_job: "dancer",
-    level: 1,
     max_hp: 225,
     max_sp: 50,
     phys_atk: 80,
@@ -96,7 +91,6 @@ const Primrose = {
 const Alfyn = {
     name: "Alfyn",
     primary_job: "Apothecary",
-    level: 1,
     max_hp: 300,
     max_sp: 50,
     phys_atk: 88,
@@ -114,7 +108,6 @@ const Alfyn = {
 const Therion = {
     name: "Therion",
     primary_job: "Thief",
-    level: 1,
     max_hp: 250,
     max_sp: 40,
     phys_atk: 88,
@@ -132,7 +125,6 @@ const Therion = {
 const H_aanit = {
     name: "H\'aanit",
     primary_job: "Hunter",
-    level: 1,
     max_hp: 250,
     max_sp: 40,
     phys_atk: 96,
