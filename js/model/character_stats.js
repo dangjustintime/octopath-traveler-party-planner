@@ -3,7 +3,7 @@
 //   https://gamefaqs.gamespot.com/boards/204212-octopath-traveler/76722867
 
 // Ophilia
-const Ophilia = {
+const OPHILIA = {
   name: "Ophilia",
   primary_job: "Cleric",
   max_hp: 225,
@@ -20,7 +20,7 @@ const Ophilia = {
 }
 
 // Cyrus
-const Cyrus = {
+const CYRUS = {
   name: "Cyrus",
   primary_job: "Scholar",
   max_hp: 200,
@@ -37,7 +37,7 @@ const Cyrus = {
 }
 
 // Tressa
-const Tressa = {
+const TRESSA = {
   name: "Tressa",
   primary_job: "Merchant",
   max_hp: 275,
@@ -54,7 +54,7 @@ const Tressa = {
 }
 
 // Olberic
-const Olberic = {
+const OLBERIC = {
   name: "Olberic",
   primary_job: "Warrior",
   max_hp: 325,
@@ -71,7 +71,7 @@ const Olberic = {
 }
 
 // Primrose
-const Primrose = {
+const PRIMROSE = {
   name: "Primrose",
   primary_job: "Dancer",
   max_hp: 225,
@@ -88,7 +88,7 @@ const Primrose = {
 }
 
 // Alfyn
-const Alfyn = {
+const ALFYN = {
   name: "Alfyn",
   primary_job: "Apothecary",
   max_hp: 300,
@@ -105,7 +105,7 @@ const Alfyn = {
 }
 
 // Therion
-const Therion = {
+const THERION = {
   name: "Therion",
   primary_job: "Thief",
   max_hp: 250,
@@ -122,7 +122,7 @@ const Therion = {
 }
 
 // H'aanit
-const H_aanit = {
+const H_AANIT = {
   name: "H\'aanit",
   primary_job: "Hunter",
   max_hp: 250,

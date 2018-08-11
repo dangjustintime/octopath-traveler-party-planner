@@ -7,47 +7,11 @@ class App extends React.Component {
     };
     this.resetParty = this.resetParty.bind(this);
     this.addToParty = this.addToParty.bind(this);
-    this.changeJob = this.changeJob.bind(this);
   }
   resetParty() {
     console.log("reset party");
     this.setState({ party: [] });
     console.log(this.state.party);
-  }
-  changeJob(character, job) {
-    if (job.max_hp) {
-        character.max_hp *= job.max_hp;
-    }
-    if (job.max_sp) {
-        character.max_sp *= job.max_sp;
-    }
-    if (job.phys_atk) {
-        character.phys_atk *= job.phys_atk;
-    }
-    if (job.elem_atk) {
-        character.elem_atk *= job.elem_atk;
-    }
-    if (job.phys_def) {
-        character.phys_def *= job.phys_def;
-    }
-    if (job.elem_def) {
-        character.elem_def *= job.elem_def;
-    }
-    if (job.accuracy) {
-        character.accuracy *= job.accuracy;
-    }
-    if (job.speed) {
-        character.speed *= job.speed;
-    }
-    if (job.critical) {
-        character.critical *= job.critical;
-    }
-    if (job.evasion) {
-        character.evasion *= job.evasion;
-    }
-    if (job.evasion) {
-        character.evasion *= job.evasion;
-    }
   }
   addToParty(character) {
     if (this.state.party.length == 4) {
@@ -74,35 +38,35 @@ class App extends React.Component {
         <div className="container row characters">
           <CharacterInfo
             addToParty={this.addToParty}
-            character={Ophilia}>
+            character={OPHILIA}>
           </CharacterInfo>
           <CharacterInfo
             addToParty={this.addToParty}
-            character={Cyrus}>
+            character={CYRUS}>
           </CharacterInfo>
           <CharacterInfo
             addToParty={this.addToParty}
-            character={Tressa}>
+            character={TRESSA}>
           </CharacterInfo>
           <CharacterInfo
             addToParty={this.addToParty}
-            character={Olberic}>
+            character={OLBERIC}>
           </CharacterInfo>
           <CharacterInfo
             addToParty={this.addToParty}
-            character={Primrose}>
+            character={PRIMROSE}>
           </CharacterInfo>
           <CharacterInfo
             addToParty={this.addToParty}
-            character={Alfyn}>
+            character={ALFYN}>
           </CharacterInfo>
           <CharacterInfo
             addToParty={this.addToParty}
-            character={Therion}>
+            character={THERION}>
           </CharacterInfo>
           <CharacterInfo
             addToParty={this.addToParty}
-            character={H_aanit}>
+            character={H_AANIT}>
           </CharacterInfo>
         </div>
       </div>

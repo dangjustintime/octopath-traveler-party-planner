@@ -2,7 +2,6 @@ class PartyCharacter extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      character: this.props.character,
       secondary_job: "None",
       bonus: {
         max_hp: 1,
